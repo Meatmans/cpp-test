@@ -1,6 +1,13 @@
 #include <iostream>
+#include <string>
 
-int main() {
-    std::cout << "Hello, Programming Seminar 1 !\n";
-    return 0;
+int main()
+{
+    int b = 2;
+    {
+        int c = 3;
+        std::cout <<b << c << std::endl; 
+
+    }
+    
 }
