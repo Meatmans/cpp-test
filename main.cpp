@@ -1,16 +1,23 @@
 #include <iostream>
-#include <string>
 
 int main()
 {
-    int b = 2;
-
+    int hidden_number = 10;
+    int user_guess;
+    int tries= 0;
+    while(tries < 5)
     {
-         int b = 3;
-        std::cout << b << std::endl; 
+        std::cin >> user_guess;
+        if (user_guess == hidden_number)
+        {
+            std::cout << "CONGRATS!";
+            break;
+        }
+          if (user_guess < 0)
+          {
+            continue;
+          }
+          tries += 1;
     }
-    std::cout << b << std::endl; 
-    
-    
-}
 
+}
